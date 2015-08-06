@@ -8,18 +8,12 @@ import java.util.Random;
 public class Driver {
 
 	public static void main(String[] args) {
-		Lector lector = new Lector ();
 		Random random = new Random ();
+		Lector lector = new Lector();
 		int[] numeros = new int [3000];
-		Comparable[] lista = new Comparable[3000];
-		Sorting radix = new Sorting();
 		
 		for(int i = 0; i < 3000; i++){
 			numeros[i] = random.nextInt(3001);
-			
-		}
-		for(int i = 0; i < 3000; i++){
-			lista[i] = numeros[i];
 			
 		}
 		PrintWriter pw;
@@ -40,13 +34,7 @@ public class Driver {
 				e.getStackTrace();	
 			}
 		}
+		
 		lector.leerArchivo();
-		for(int i = 0; i < 3000; i++){
-			System.out.println(numeros[i]);
-		}
-		radix.insertionSort(lista); //AQUÍ COLOAR EL SORT A UTILIZAR
-		for(int i = 0; i < 3000; i++){
-			System.out.println(lista[i]);
-		}
 	}
 }
