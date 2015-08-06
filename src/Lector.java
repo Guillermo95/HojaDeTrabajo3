@@ -4,6 +4,7 @@ import java.io.*;
 public class Lector{
 
 	public int[] vector = new int[3000];
+	
 	public void leerArchivo(){
 		String contenido = "";
 		try{
@@ -21,6 +22,4 @@ public class Lector{
 	public int[] getVector(){
 		return vector;
 	}
-	
-	
 }
